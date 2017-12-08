@@ -90,4 +90,8 @@ git checkout:
 This command is used to generally to switch from one branch to another. For example, consider that we are initially on the branch 'master'. Now we create a branch named 'test'. In order to work on the branch , we have to switch branches. This is accomplished by the command 'git checkout test'. 
 Another use of the git checkout is to undo changes made to files and revert them back to the state they were during the last commit. For example, if we have a file named target, and we want to revert this file back to the way it was during the previous commit we use the statement 'git checkout -- target'. This will undo all the changes made to the file target since the last commit.
 
+git merge:
+Once we have finished working on a feature which is on a separate branch, we would like to add this feature to our main branch. To do this, we must merge out feature branch with our main branch. To do this, we use the 'git merge <branch_name>' command. This command will merge the branch specified by branch name with the branch you are currently on. 
+
+
 

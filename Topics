@@ -56,6 +56,13 @@ Now you have made some changes to a file and have staged this file. But suddenly
 'git reset <filename>'.
 
 git diff:
+Before commiting , it is good to know what changes we have to the files. To accomplish this, the 'git diff' command is used. When we use the git diff command , we can see the changes made from the version of the files present in the previous commit. The git diff command has different forms.
+'git diff' : It tells us the changes made in the files which are unstaged.
+'git diff --staged': It tells us the changes made in the files which have been staged.
+'git diff HEAD': It tells us the changes made in all the files when compared with the last commit.
+The HEAD is a pointer that holds your position within all your different commits. By default HEAD points to your most recent commit.
+ 
+
 
 
 

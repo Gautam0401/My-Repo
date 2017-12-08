@@ -13,3 +13,27 @@ Git was created by Linus Torvalds in 2005 for development of the Linux kernel, w
 As with most other distributed version control systems, and unlike most client–server systems, every Git directory on every computer is a full-fledged repository with complete history and full version tracking abilities, independent of network access or a central server.[13]
 
 Git is free software distributed under the terms of the GNU General Public License version 2.
+
+4)How to use Git:
+
+Write the different commands in git with a brief explanation.
+Also paste screenshots while explaining each command.
+
+Different commands in Git:
+git init
+git status
+git add
+git commit
+git log
+git remote add
+git pull
+git push
+git reset
+git rm
+git branch
+git checkout
+git stash
+git merge
+
+
+

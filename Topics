@@ -39,7 +39,10 @@ git init:
 This command initializes the current directory as a git repository. A repository is a directory where you can version control your files. When we do git init,
 git adds a hidden directory in our working directory.
 
-git status:
+git add:
+The next thing we must do after initializing our working directory as a repository is to start tracking the files in the repository. In order to start version controlling our files, we must explicitly tell our repo to keep track of the files using git add. Once we use a git add command on a file, git now keeps track of the file and notifies us when the file has been modified.
+This command is used in another scenario as well. Suppose we already have a file which git is already keeping track of. Now if this particular file is modified, then now we have to save this change. To do this, first we use the 'git add <filename>' command. This commands adds the particular file to the staging area. The staging area refers to files which are ready to be commited.
+
 
 
 

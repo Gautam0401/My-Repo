@@ -65,7 +65,8 @@ The HEAD is a pointer that holds your position within all your different commits
 git log:
 At any point if we want to see the history of your repository(list commits made), we use the git log command. When we use the command, we can see the author of the commit, the date on which the commit was made and the message that was saved along each commit. We can use 'git log --summary' to see more information about each commit.
  
-
+Remote Repositries:
+Remote repositories are versions of your project that are hosted on the Internert or network somewhere. Collaborating with others involves managing these remote repositories and pushing and pulling data to and from them when you need to share work. Managing remote repositories includes knowing how to add remote repositories, remove remotes that are no longer valid, manage various remote branches and define them as being tracked or not, and more. Examples of remote repositories are those repositories present in Github.
 
 
 

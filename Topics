@@ -35,5 +35,13 @@ git checkout
 git stash
 git merge
 
+git init:
+This command initializes the current directory as a git repository. A repository is a directory where you can version control your files. When we do git init,
+git adds a hidden directory in our working directory.
+
+git status:
+
+
+
 
 

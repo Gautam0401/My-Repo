@@ -68,6 +68,9 @@ At any point if we want to see the history of your repository(list commits made)
 Remote Repositries:
 Remote repositories are versions of your project that are hosted on the Internert or network somewhere. Collaborating with others involves managing these remote repositories and pushing and pulling data to and from them when you need to share work. Managing remote repositories includes knowing how to add remote repositories, remove remotes that are no longer valid, manage various remote branches and define them as being tracked or not, and more. Examples of remote repositories are those repositories present in Github.
 
+git remote add:
+Before we push into a remote repo , we must create a remote repo somewhere say on Github. Once we have created a remote repository, we now have to connect the remote repo with our local repo so that we can push to and pull from the remote repo. To do this, we use the git remote add command.This command is of the form 
+'git remote add <remote_name> <url>'. We can give any remote name, but it is typical to name your main remote as origin. Url refers to the repository URL. An example of a repository URL is ' https://github.com/try-git/try_git.git'.
 
 
 

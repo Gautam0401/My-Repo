@@ -46,6 +46,12 @@ This command is used in another scenario as well. Suppose we already have a file
 git status:
 Whenever we are working in a repository, it is always good practice to check the status of files in the repo. Status refers to whether if the files in the repository are being tracked by git or not, whether the files have been modified or not, whether the files have been staged or not etc. For this purpose we use the git status command.
 
+git commit:
+Now once you have made all the required changes to your files, you would want to save this version of the repository with the changes made to the particular files in the repository. This is accomplished using the 'git commit' command.
+Each time you use the git commit command, git takes a snapshot of your repository at that point. Each snapshot will be stored so that you can revert back to any of the older versions of the repository if you want. The snapshot taken will only contain the files that are being tracked by git. So, if you haven't added some files using the 'git add ' command, that file will not be present in the snapshot taken when the 'git commit' command is used. The changes in files present in the staging area will be incorporated into the snapshot. Along with each commit, we usually add a message which tells us what change has been in a particular commit.Therfore, the form of a commit command in git is
+'git commit -m 'Message''.
+
+
 
 
 

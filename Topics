@@ -51,6 +51,12 @@ Now once you have made all the required changes to your files, you would want to
 Each time you use the git commit command, git takes a snapshot of your repository at that point. Each snapshot will be stored so that you can revert back to any of the older versions of the repository if you want. The snapshot taken will only contain the files that are being tracked by git. So, if you haven't added some files using the 'git add ' command, that file will not be present in the snapshot taken when the 'git commit' command is used. The changes in files present in the staging area will be incorporated into the snapshot. Along with each commit, we usually add a message which tells us what change has been in a particular commit.Therfore, the form of a commit command in git is
 'git commit -m 'Message''.
 
+git reset:
+Now you have made some changes to a file and have staged this file. But suddenly you realize the files is not ready to be commited yet, but the file has already been staged. In this case , we use the git reset command. This command is used to unstage files which are already staged. This command is of the form 
+'git reset <filename>'.
+
+git diff:
+
 
 
 

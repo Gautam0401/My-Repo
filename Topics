@@ -83,4 +83,11 @@ git rm:
 The git rm command is used to remove files from the repo. Along with removal from the repo, this command also stages the removal of the files. That is, when we use the git status command, we can see the deleted files in the staging area. Now if we commit, these files will be removed in the snapshot of the repository.
 If we want to delete an entire folder of files, we use the command 'git rm -r <folder_name>'. 
 
+git branch:
+Branches are what naturally happens when you want to work on multiple features at the same time. In git when we create a branch , a copy of the repository in the current state is created. We can work on this branch and make changes to it without affecting the main branch. We use when we must work on multiple features at the same time. A separate branch can be created for each feature. Now, in git to create a branch we use the command 'git branch <branch_name>'. This creates a copy of the current state of the current branch we are on. Once we finish working on a branch, we can merge the branch with the main branch.
+
+git checkout:
+This command is used to generally to switch from one branch to another. For example, consider that we are initially on the branch 'master'. Now we create a branch named 'test'. In order to work on the branch , we have to switch branches. This is accomplished by the command 'git checkout test'. 
+Another use of the git checkout is to undo changes made to files and revert them back to the state they were during the last commit. For example, if we have a file named target, and we want to revert this file back to the way it was during the previous commit we use the statement 'git checkout -- target'. This will undo all the changes made to the file target since the last commit.
+
 

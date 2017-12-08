@@ -76,5 +76,9 @@ Before we push into a remote repo , we must create a remote repo somewhere say o
 git push:
 The git push command is used to push the contents of your local repository into the remote repository present on Github. We need to specify which remote we are pushing into and also need to specify which branch in the remote repository. This command is of the form 'git push -u <remote_name> <branch_name>'. The -u option of the push command tells git to remember the paramters, so that next time we can simply run git push and git will know what to do.
 
+git pull:
+Suppose that you are working with many people on a project and you have a remote repo on Github. After a period of time , if we want to see the changes made by others we can use the git pull command to pull files from the remote repo to our local one. When we use git pull, it merges our current local repo with the files obtained from the remote repo. Just as in the case of git push, we need to specify the name of the remote and the branch from which we are pulling. The git pull command will be of the form 'git pull <remote_name> <branch_name>'.
+
+
 
 

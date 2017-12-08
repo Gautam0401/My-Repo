@@ -79,6 +79,8 @@ The git push command is used to push the contents of your local repository into 
 git pull:
 Suppose that you are working with many people on a project and you have a remote repo on Github. After a period of time , if we want to see the changes made by others we can use the git pull command to pull files from the remote repo to our local one. When we use git pull, it merges our current local repo with the files obtained from the remote repo. Just as in the case of git push, we need to specify the name of the remote and the branch from which we are pulling. The git pull command will be of the form 'git pull <remote_name> <branch_name>'.
 
-
+git rm:
+The git rm command is used to remove files from the repo. Along with removal from the repo, this command also stages the removal of the files. That is, when we use the git status command, we can see the deleted files in the staging area. Now if we commit, these files will be removed in the snapshot of the repository.
+If we want to delete an entire folder of files, we use the command 'git rm -r <folder_name>'. 
 
 

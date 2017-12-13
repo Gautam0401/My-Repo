@@ -1,0 +1,39 @@
+DOM:
+DOM stands for Document Object Model. The DOM acts as a means through which javascript interacts with HTML. In DOM, everything in the HTML document is seen as an object. Every tag is an individual object. Every object is unique. This is what makes DOM important, as it makes it easier for us to identify individual objects easily. The entire structure of the HTML document can be represented as a tree with the root as the document object. All the tags in the HTML doc are objects which are a part of the the document object. Since DOM provides a way for Javascript to interact with with HTML, we can make our webpage dynamic. 
+
+To identify the different objects in a HTML document, we can assign an id to these objects. We can then use these to fetch the required objects when required.
+
+Example:
+<!DOCTYPE html>
+<html>
+<script>
+var a = 5;
+var b =10;
+
+function click123()
+{	
+	var x;
+	if(confirm("Click the button")== true)
+	{
+		x= "Button Pressed";
+	}
+	else
+	{
+		x= "Cancelled";
+	}
+	document.getElementById("Text").innerHTML=x;
+}
+</script>
+<body>
+<button onclick="click123()">Touch me</button>
+<h1>First Javascript</h1>
+<p id="Text"></p>
+</body>
+</html>
+
+In this example we have a paragraph and we give it an id 'Text'. We can similarly give any id. There is nothing between the paragraph tags indicating that the paragraph is empty initially. We also have a button. When the button is clicked, it calls a function called click123(). Inside the function, we have a conditional statement. The confirm method displays a dialog box which has an ok button and a cancel button along with the specified text. If the ok button is pressed, then we set the variable x to "Button Pressed", or else we set it to "Cancelled". Now comes the part where DOM is of importance. All the objects in the entire HTML document comes under the document object. Hence in order to access any object in the document we prefix 'document.'. Next the method getElementById() is called. This method fetches the object whose id is specified in the parantheses. In this example, we pass the id of the paragraph. So we are able to fetch the paragraph object. The 'innerHTML()' method in this case to write into the paragraph. So basically in this command, we fetch a paragraph object from the document corresponding to the id "Text" and set it's text to the value of x. From this we can see 2 things:
+1)We can see that DOM makes it easier for javascript to interact with the HTML and fetch the required object.
+2)We can see how using javascript we can dynamically change things on the webpage. This is shown by dynamically changing the value of the paragraph.
+
+BOM:
+BOM stands for Browser Object Model. BOM is also an object oriented model similar to DOM. In BOM, everthing is considered as an object. Just as we say that DOM provides a means for javascript to interact with the document, BOM provides a means for javascript to interact with the browser.We have a single object called 'window' under which there are several other objects such as document, history, screen, navigator, location.The document object as mentioned before consists of the objects corresponding to the HTML elements. Hence we can say that the Document Object Model is itself a part of the the Browser Object Model. We can see the list of websites visited previously using the history object. The screen object of window gives us info about the browser screen such as height, width etc. The navigator object can be used to get information about the browser being used. The location object of window is used to get information about the current webpage you are on.

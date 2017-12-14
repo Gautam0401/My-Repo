@@ -1,0 +1,90 @@
+Things learnt today:
+1)Forms:
+Forms are a means of getting user input in HTML. We use the <form> tag to declare a form. Next, in order to get inputs from the user, we use the <input> tag. The type attribute of the input tag can have several types like text, but:tons, radio buttons, checkboxes etc.
+2)Scope of variables in JS:
+Different variables have a different scope in javascript. Not all all variables are accessible from everywhere. Some variables are declared inside function. These variables are accessible from only within the function. These are called as local variables. When variables declared outside all functios, then these varibles become global variables. All the scripts and functions on a webpage can access these variables. The lifetime of these variable also vary. Both local and variable's lifetime start when they are declared. However, the lifetime of a local variable comes to an end when we reach the ending of the function which encloses these local variables. Once the end of their respective functions are reached, these local variables are deleted. On the other hand, the global variables persist until you close your browser window.
+3)Date object in JS:
+The Date object of javascript provides us with information such as the current date, which day it is, the time and can also tell us which time zone we are in.
+
+<!DOCTYPE html>
+<html>
+<script>
+
+function click123()
+{	
+	
+	document.getElementById("Text").innerHTML=Date();
+}
+</script>
+<body>
+<button onclick="click123()">Date</button>
+
+<p id="Text"></p>
+</body>
+</html>
+
+The given example gives us information about the date when the buttton is pressed. When the button is pressed, we get the following output:
+Thu Dec 14 2017 15:53:32 GMT+0530 (IST)
+
+There are also several other date methods such as getDay, getDate,getFullYear etc which give us specific information.
+
+
+4)Cookies and Javascript:
+Since everything in Javascript is an object, javascript has a wide range of capabilities. We can find out the title of our webpage via javascript, we can count the total number of tags in our html document, we can fetch the information stored in cookies etc. 
+
+Javascript is capable of accessing the cookies that are present in our browser. Cookies generally store infrmation about the user when they visit a webpage such as usernames. This can be done by using the document.cookies statement.
+Example:
+<!DOCTYPE html>
+<html>
+<head>
+<title>My webpage</title>
+</head>
+
+<body>
+<button onclick="click1()">Click</button>
+<p id="abc">test</p>
+<h1></h1>
+<h1></h1>
+<script>
+
+function click1()
+{
+	document.getElementById("abc").innerHTML=document.cookies;
+}
+</script>
+</body>
+</html>
+
+In this example, when we press the button, the paragraph element will display the information stored inside the cookies.
+
+Opening new tabs using javascript:
+In HTML we have hyperlinks. We can open these hyperlinks in the same tab or a different tab or on a different frame with the help of the target attribute of the <a> tag. We can also open new tabs using javascript as well.
+Example:
+<!DOCTYPE html>
+<html>
+<head>
+<title>My webpage</title>
+</head>
+
+<body>
+<button onclick="click1()">Click</button>
+<p id="abc">test</p>
+<h1></h1>
+<h1></h1>
+<script>
+
+function click1()
+{
+	var a = window.open();
+	a.document.open();
+	a.document.write("<h1>New tab</h1>");
+	a.document.close();
+}
+</script>
+</body>
+</html>
+
+In this example, we have a button. Once this button is clicked, it calls the function click1(). Inside this function we declare a variable named 'a'. We assign windows.open() to the varible. This actually creates a new window object(another tab).
+Next we do a.document.open() . This creates a link to our new tab. Next we write to this new tab using a.document.write().
+We normally do document.write() to write on the current tab. When we prefix 'a.' we refer to the new window object. After we finish writing to the window object 'a' , we terminate the link to the window 'a' by doing a.close().
+This is how we open a new window in javascript.

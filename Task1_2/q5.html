@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p id="Years"></p>
+<script>
+var i;
+var years = [];
+for(i=2014;i<=2050;i++)
+{
+	var d = new Date(i,0,1,5,30,0,0);
+	if(d.getDay()==0)
+	{
+		years.push(i);
+	}
+	document.getElementById("Years").innerHTML = years;
+}
+</script>
+</body>
+</html>

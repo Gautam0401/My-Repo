@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p id="text"></p>
+<script>
+var str= "2adpro media solutions"
+document.getElementById("text").innerHTML=str;
+var len = str.length;
+function rotate()
+{
+	var temp = str.slice(len-1);
+	str= temp + str.substr(0,len-1);
+	document.getElementById("text").innerHTML=str;
+
+}
+</script>
+<button onclick="rotate()">Click to rotate string</button>
+</body>
+</html>

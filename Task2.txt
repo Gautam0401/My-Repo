@@ -1,0 +1,3 @@
+Write a function translate() that will translate a text into "Chennai". 
+That is, double every consonant and place an occurrence of "P" in between.
+For example, translate("this is fun") should return the string "tPthPhisPs isPs fPfunPn". 

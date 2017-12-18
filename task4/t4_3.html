@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<form>
+	Enter String:<br>
+	<input type="text" name="string_text" id="str">
+	<input type="button" name="Hi" value="Check if sting starts with Hi" onclick="hicheck()">
+</form>
+
+<p id="output"></p>
+<script type="text/javascript">
+	function hicheck()
+	{
+		var str = document.getElementById("str").value.toLowerCase();
+		if(str.indexOf("hi")==0)
+			document.getElementById("output").innerHTML = true;
+		else
+			document.getElementById("output").innerHTML = false;
+	}
+</script>
+</body>
+</html>

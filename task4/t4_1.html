@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<form>
+	Enter Text:<br>
+	<input type="Text" name="string" id="str">
+	<br>
+	<input type="button" name="reverse" value="Reverse String" onclick="rev()">
+</form>
+<br>
+<p id= "rev_string"></p>
+<script type="text/javascript">
+		function rev()
+		{
+			var str = document.getElementById("str").value.toString();
+			var len = str.length;
+			var i;
+			for(i=0;i<len;i++)
+			{
+				str = str.substr(0,i) + str.slice(len-1) + str.substr(i,len-i-1);
+			}
+			document.getElementById("rev_string").innerHTML = "Reversed String: " + str;
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<p id = "original"></p>
+<button onclick="alphasort()">Click to sort</button>
+<p id="sorted"></p>
+<script type="text/javascript">
+	var strings = ["acs","askf","cds","bfd","vas","qwer","ytr"];
+	document.getElementById("original").innerHTML ="Original array is : [" + strings + "]";
+	function alphasort()
+	{
+		strings.sort();
+		document.getElementById("sorted").innerHTML = "Sorted array is : [" + strings + "]";
+	}	
+
+
+</script>
+</body>
+</html>

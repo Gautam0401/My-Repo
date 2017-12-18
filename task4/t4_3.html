@@ -15,7 +15,10 @@
 	function hicheck()
 	{
 		var str = document.getElementById("str").value.toLowerCase();
-		if(str.indexOf("hi")==0)
+		var i=0;
+		while(str.charAt(i) == " ")
+			{i++;}
+		if(str.indexOf("hi")==i)
 			document.getElementById("output").innerHTML = true;
 		else
 			document.getElementById("output").innerHTML = false;

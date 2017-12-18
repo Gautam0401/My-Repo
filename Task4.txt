@@ -1,0 +1,6 @@
+1. Define a function reverse() that computes the reversal of a string. For example, reverse("I love India")
+should return the string "aidnI evol I".
+
+2. Write a function to sort a list of words (an array) in alphabetical order.
+
+3.Write a JavaScript program to check if a string starts with 'Hi' and false otherwise.

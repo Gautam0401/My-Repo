@@ -10,6 +10,7 @@ document.getElementById("day").innerHTML="Today is "+ days[d.getDay()];
 var hr=d.getHours();
 var min = d.getMinutes();
 var sec = d.getSeconds();
+var t;
 var m;
 if(hr>=12)
 {
@@ -28,6 +29,14 @@ else
 if(hr==0)
 {
 	hr = 12;
+}
+if(min < 10)
+{
+	min = "0" + min;
+}
+if(sec < 10)
+{
+	sec = "0" + sec;
 }
 document.getElementById("time").innerHTML = "Current time is: " + hr +  " " + m + " : "+min + " : " + sec;
 </script>

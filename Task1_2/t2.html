@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<p id="string"></p>
+<p id="new_string"></p>
+<script type="text/javascript">
+	var str = "this is fun";
+	document.getElementById("string").innerHTML="Original String: " + str;
+	function replace()
+	{
+	var len = str.length;
+	var str2="";
+	var i;
+	for(i=0;i<len;i++)
+	{
+		var ch = str.charAt(i).toString().toLowerCase();
+		var norm = str.charAt(i).toString();
+		var rep = norm + "P" + norm;
+		if(ch!="a" && ch!="e" && ch!="i" && ch!="o" && ch!="u" && ch!=" ")
+		{
+			str2+=rep;
+		}
+		else
+		{
+			str2+=norm;
+		}
+	}
+	document.getElementById("new_string").innerHTML="New String: " + str2;
+}
+</script>
+<button onclick="replace()">Press to see replaced string</button>
+</body>
+</html>

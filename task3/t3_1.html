@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<form>
+	<input type="number" name="guess_number" id="Guess" min="1" max="10">
+	<input type="button" name="submit" value="Submit Guess" onclick="click1()">
+	<script type="text/javascript">
+		function click1()
+		{
+			var x;
+			x = Math.floor(Math.random()*10)+1;
+			var num = document.getElementById("Guess").value;
+			if(num == x.toString())
+			{
+				document.write("Good Work");
+			}
+			else
+			{
+				document.write("Not matched. Correct Answer is: "+ x );
+			}
+			
+		}
+	</script>
+</form>
+
+</body>
+</html>

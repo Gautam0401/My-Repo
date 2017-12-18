@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<form>
+	Temperature:<br>
+	<input type="number" name="Temperature" id="temp">
+	<br>
+	<input type="button" name="C_to_F" value="C to F" onclick="CtoF()">
+	<input type="button" name="F_to_C" value="F to C" onclick="FtoC()">
+</form>
+<br>
+<p id="text"></p>
+<script type="text/javascript">
+	function CtoF()
+	{
+		var cel= document.getElementById("temp").value;
+		var far=(9*cel)/5 + 32;
+		document.getElementById("text").innerHTML= "Temperature in Farenheit: " + far;
+
+	}
+
+	function FtoC()
+	{
+		var far= document.getElementById("temp").value;
+		var cel=(5*(far - 32))/9;
+		document.getElementById("text").innerHTML= "Temperature in Celsius: " + cel;
+	}
+</script>
+</body>
+</html>

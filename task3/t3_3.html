@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p id="Array"></p>
+<button onclick="sum()">Sum</button>
+<button onclick="mul()">Multiply</button>
+<p id="fun_output"></p>
+<script>
+var arr = [2,3,4,5,6,11];
+document.getElementById("Array").innerHTML="The given array is : [" + arr + "]";
+function sum()
+{
+	var sum = 0;
+	var len = arr.length;
+	var i;
+	for(i=0;i<len;++i)
+	{
+		sum += arr[i];
+	}
+	document.getElementById("fun_output").innerHTML = "Sum of Element: " + sum;
+}
+
+function mul()
+{
+	var prod = 1;
+	var len = arr.length;
+	var i;
+	for(i=0;i<len;++i)
+	{
+		prod *= arr[i];
+	}
+	document.getElementById("fun_output").innerHTML = "Product of Elements: " + prod;
+}
+</script>
+</body>
+</html>

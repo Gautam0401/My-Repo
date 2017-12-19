@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<style type="text/css">
+	button{
+		height:100px;
+		width:100px;
+		transition: height 1s , width 1s;
+		transition-timing-function: ease-in-out;
+		font-size: 18px;
+		margin-left: 45%;
+		margin-top: 20%;
+	}
+
+	button:hover{
+		height: 200px;
+		width:200px;
+	}
+
+
+</style>
+<body>
+<button id="key" class="btn" onclick="clicked()"></button>
+<script>
+window.addEventListener('keydown',pressed);
+function pressed(e)
+{
+	var pressed = e.key;
+	document.getElementById("key").innerHTML =  pressed;
+}
+
+function clicked()
+{
+	var key = document.getElementById("key").innerHTML.toString();
+	alert("The key last pressed was: " + key);
+}
+</script>
+</body>
+</html>

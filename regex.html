@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<form>
+	<input type="text" name="inputbox" id="input">
+	<input type="button" name="" value="validate" onclick="validate()">
+</form>
+<p id="validity"></p>
+<p>Non-valid characters:!,,#,$,%,^,&,*,(,)</p>
+<script type="text/javascript">
+	function validate()
+	{
+		var str = document.getElementById("input").value;
+		var found=str.search(/(!|#|\$|%|\^|&|\*|\(|\))/);
+		var newstr=str.replace(/(!|#|\$|%|\^|&|\*|\(|\))/g,"");
+		document.getElementById("input").value = newstr;
+			if(found<0)
+			document.getElementById("validity").innerHTML = "Valid string";
+			else
+			{
+				document.getElementById("validity").innerHTML = "Not a Valid String"
+			}
+	}
+</script>
+</body>
+</html>

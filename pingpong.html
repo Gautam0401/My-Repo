@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		#table{
+			background-color: black;
+			border-color: red;
+			border-style: groove;
+		}
+	</style>
+</head>
+<body>
+<canvas id='table' height="800px" width="800px"></canvas>
+<script type="text/javascript">
+	var canvas = document.querySelector("#table");
+	var ctx = canvas.getContext('2d');
+	const width = 800;
+	const height = 800;
+	ctx.fillStyle= "yellow";
+	var posx = 400;
+	var posy = 400;
+	var p1posy = 375;
+	var p2posy = 375;
+	var velx = 3;
+	var vely = 3;
+	var score1=0;
+	var score2=0;
+	var paddle1Vel=0; //velocity of left paddle
+	var paddle2Vel=0;
+
+
+	ctx.fillRect(posx,posy,20,20);
+	ctx.fillRect(0,375,10,50);
+	ctx.fillRect(790,375,10,50);
+	ctx.font = "30px Arial";
+	ctx.strokeStyle="yellow";
+	gameloop();
+	function gameloop()
+	{
+		
+		ctx.clearRect(0,0,width,height);
+		ctx.fillStyle="yellow";
+		ctx.moveTo(400,0);
+		ctx.lineTo(400,800);
+		ctx.stroke();
+		ball();
+		paddle();
+		ctx.fillRect(0,p1posy,10,50);
+		ctx.fillRect(790,p2posy,10,50);
+		
+		ctx.fillRect(posx,posy,20,20);	
+		ctx.fillRect(posx,posy,20,20);
+		ctx.fillText("Player-1: "+score1,50,50);
+		ctx.fillText("Player-2: "+score2,450,50);
+
+	}
+
+	function ball()
+	{
+		if(posx>=770 && velx>0 && posy+20>p2posy && posy<p2posy+50)
+			{velx=-velx;
+
+			}
+		else
+			if(posx<=10 && velx<0 && posy+20>p1posy && posy<p1posy+50)
+				{velx = -velx;
+		         }
+		  else
+		  	if((posx<0 && velx<0) )
+		  {
+		  	posx = 400;	
+		  	velx = -velx;
+		  	score2++;
+		  }
+		  else
+		  	if((posx>780 && velx>0) )
+		  {
+		  	posx = 400;	
+		  	velx = -velx;
+		  	score1++;
+		  }
+
+		  if(posy<0||posy>780)
+		  	vely=-vely;
+
+		 posx+=velx;
+		 posy+=vely;
+	}
+
+	function paddle()
+	{
+		
+		p1posy+=paddle1Vel;
+		p2posy+=paddle2Vel;
+		if(p1posy>750)
+			p1posy=0;
+		else
+			if(p1posy<0)
+				p1posy=750;
+
+			if(p2posy>750)
+			p2posy=0;
+		else
+			if(p2posy<0)
+				p2posy=750;
+	}
+
+	function movePaddle(e)
+	{
+		
+		if(e.key == "ArrowDown")
+		{
+			paddle1Vel= 5;
+		}
+		else
+		if(e.key == "ArrowUp")
+		{
+			paddle1Vel = -5;
+		}
+		else
+			if(e.key == 'w')
+			{
+				paddle2Vel = -5;
+			}
+
+		else
+			if(e.key == 's')
+			{
+				paddle2Vel = 5;
+			}
+
+	}
+	setInterval(gameloop,1000/60);
+	window.addEventListener('keydown', movePaddle);
+	window.addEventListener('keyup',(e) =>{
+		const key = e.key;
+		if(key =="ArrowUp" || key =="ArrowDown")
+		paddle1Vel=0;
+		else
+			if(key == 'w' || key =='s')
+		paddle2Vel=0;
+	});
+</script>
+</body>
+</html>

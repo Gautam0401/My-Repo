@@ -1,0 +1,24 @@
+The Pragmatic Programmer
+
+This book gives the reader an overview of how to be a smart and practical programmer when designing any kind of software. The main idea of the book is to highlight the common
+mistakes made my many programmers and to provide practical solutions which can be used to avoid these mistakes. The different mistakes which are commonly made are explained in simple terms 
+with the help of various analogies and simple situational examples. A good example is the "Stone soup boiled frog" analogy. It is a story about how a few soldiers tricked villagers into giving them food. Even though 
+this story is in no way related to programming, it tells us something important. If you know how to do something, then do it. In a company,even if you have an idea and know that i will 
+work for sure, many tend to wait for permission from their higher officials which just leads to delay. In such cases, you just implement what you can and then show it to others. When you
+show what you done, it will intrigue those around you. Their suggestions will improve upon your own idea. In a way, you act as a catalyst to the company's success. 
+
+Another example of an analogy is used when explaining "Programming by Coincidence". It gives us an example of a soldier who stands in front of a field full of landmines. He sees no signs of landmines
+or any barbed wires. Initially he pokes the ground with a stick while carefully treading through the field. At a point of time, he is convinced that there are no landmines and throws away the stick 
+and walks carefree which leads to him getting blown to bits. This is a good example which can be used to explain programming by coincidence. This example tells us that as a programmer, one 
+should not depend on luck. A programmer must not be satisfied when a piece of code works with one or two specific test cases. A programmer must think of all the places where things can go wrong 
+and think about every single possible scenario before concluding that a particular piece of code works perfectly. Similar to these two examples, there are several other examples in this books
+which teach us more valuable lessons one must remember while programming.
+
+This book also gives us tips on good programming practices. Examples are writing orthogonal code, ues of metaprogramming, assertive programming, exception handling etc. There are many such examples of good programming
+practices in this book. The tips given in are also segregated into different sections. Each section gives tips on the different stages of development. Initially, the tips given are based on the mentaility of the 
+programmer and the philosophy a programmer must follow. This is called as pragmatic philosophy. It gives us many tips like how one should take responsibility for his or her mistakes and try to fix a 
+problem instead of blaming others. The above mentioned "Stone soup " analogy also comes under this section. It also explains how to work in a pragmatic team. 
+
+The next section describes the various programming tools and gives advice on how to use these tools properly and effectively. The section following this tells us about the pragmatic paranoia. In this section,
+tips are given to construct mechanisms which can identify mistakes made by programmers. The most pragmatic programmers do not even trust themselves. So they always include mechanisms which are used to check 
+themselves. In a similar manner the various chapter give insight into the various stages of development.
